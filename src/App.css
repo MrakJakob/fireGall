@@ -1,38 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&display=swap');
+
+:root {
+  --primary: #de806e;
+  --secondary: #D46C6A;
+  --error: #D63B67;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.appTitle {
+  color: var(--primary);
+  letter-spacing: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.appDesc {
+  font-weight: 300;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.appText {
+  font-weight: 300;
+  letter-spacing: 1px;
 }
