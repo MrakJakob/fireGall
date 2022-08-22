@@ -1,4 +1,4 @@
-import * as firebase from "firebase/compat/app";
+import firebase from "firebase/compat/app";
 import "firebase/compat/storage";
 import "firebase/compat/firestore";
 
@@ -17,5 +17,6 @@ firebase.initializeApp(firebaseConfig);
 
 const appStorage = firebase.storage();
 const appFirestore = firebase.firestore();
+const timestamp = firebase.firestore.FieldValue.serverTimestamp;  // timestamp for saving urls to firebase collection 
 
-export { appFirestore, appStorage };
+export { appFirestore, appStorage, timestamp };

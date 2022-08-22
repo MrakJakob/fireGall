@@ -36,3 +36,26 @@ body, html {
   font-weight: 300;
   letter-spacing: 1px;
 }
+
+.progressBar {
+  color:#D46C6A;
+}
+
+.imageWrap {
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  position: relative;
+  opacity: 0.9;
+  border-radius: 2pt;
+}
+
+.imageWrap img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
