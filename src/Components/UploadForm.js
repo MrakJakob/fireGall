@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Input } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { ProgressBar } from "./ProgressBar";
 
 export const UploadForm = () => {
@@ -22,11 +22,15 @@ export const UploadForm = () => {
 
   return (
     <form>
-      <Input type="file" onChange={handleInput} m="4" mt="6"/>
+      <label className="tag">
+        <input type="file" onChange={handleInput} className="input" />
+        <span className="tagLabel">+</span>
+      </label>
+
       <Box className="output" p="4">
         {error && <Box className="error">{error}</Box>}
         {file && <Box className="file">{file.name}</Box>}
-        {file && <ProgressBar file={file} setFile={setFile}/>}
+        {file && <ProgressBar file={file} setFile={setFile} />}
       </Box>
     </form>
   );

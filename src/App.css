@@ -57,5 +57,33 @@ body, html {
   position: absolute;
   top: 0;
   left: 0;
-  
+}
+
+form {
+  margin: 30px auto 10px;
+  text-align: center;
+}
+
+.tag .input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.tag {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--primary);
+  margin: 10px auto;
+  line-height: 35px;
+  border-radius: 50%;
+  color: var(--primary);
+  font-size: 26px;
+  transition: 0.3s;
+}
+
+.tag:hover {
+  background: var(--primary);
+  color: white;
 }
