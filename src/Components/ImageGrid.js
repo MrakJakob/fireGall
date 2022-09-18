@@ -4,10 +4,16 @@ import { useFirestore } from "../hooks/useFirestore";
 
 export const ImageGrid = () => {
   const { docs } = useFirestore("images");
-  console.log(docs);
 
   return (
-    <Grid p="4" className="imageGrid" templateColumns='repeat(3, 1fr)' gap={5} w="full" align="center">
+    <Grid
+      p="4"
+      className="imageGrid"
+      templateColumns="repeat(3, 1fr)"
+      gap={5}
+      w="full"
+      align="center"
+    >
       {docs &&
         docs.map((doc) => (
           <GridItem className="imageWrap">
